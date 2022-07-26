@@ -1,7 +1,7 @@
 # Личный проект «Седона» 
 
 * Студент: [Yevheniia Horbachova](https://up.htmlacademy.ru/adaptive/26/user/1155739).
-* Наставник: `Неизвестно`.
+* Наставник:[Ирина Малиновская](https://htmlacademy.ru/profile/irina-malinovskaya).
 
 ---
 
