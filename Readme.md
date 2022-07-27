@@ -1,8 +1,7 @@
 # Личный проект «Седона» 
 
 * Студент: [Yevheniia Horbachova](https://up.htmlacademy.ru/adaptive/26/user/1155739).
-* Наставник: `Неизвестно`.
-
+* Наставник:[Ирина Малиновская](https://htmlacademy.ru/profile/irina-malinovskaya).
 ---
 
 **Обратите внимание, что папка с вашими исходными файлами — `source/`.**
@@ -14,7 +13,7 @@
 _Не удаляйте и не обращайте внимание на файлы:_<br>
 _`.editorconfig`, `.gitattributes`, `.gitignore`, `.stylelintrc`, `.travis.yml`, `package-lock.json`, `package.json`._
 
----
+---//
 
 ### Памятка
 
