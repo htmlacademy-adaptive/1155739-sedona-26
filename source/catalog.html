@@ -14,7 +14,7 @@
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list site-list--opened">
             <li class="site-list__item"><a href="#">Главная</a></li>
-            <li class="site-list__item--active"><a href="#">Фото и видео</a></li>
+            <li class="site-list__item site-list__item--active"><a href="#">Фото и видео</a></li>
             <li class="site-list__item"><a href="#">Формат отзыва</a></li>
             <li class="site-list__item"><a href="#">HTML academy</a></li>
           </ul>
@@ -32,58 +32,66 @@
             <p class="catalog__description">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
           </div>
 
-        <div class="photo__container">
-          <div class="photo">
+        <div class="photo-container">
+          <article class="catalog-item">
+          <div class="catalog-item__photo">
             <img src="img/photo-1-mobile.png" alt="Дорога на рассвете">
           </div>
-          <div class="photo-description">
-            <span class="photo__title">Неродные просторы</span><span class="photo__author">Автор фото: Борис</span>
+          <div class="catalog-item__description">
+            <span class="catalog-item__title">Неродные просторы</span><span class="catalog-item__author">Автор фото: Борис</span>
           </div>
-          <div class="photo__likes">
-            <svg class="photo__likes-icon">
+          <div class="likes">
+            <svg class="likes__icon">
             </svg>
-            <span class="photo__likes-number">1350
+            <span class="likes__number">1350
             </span>
          </div>
+        </article>
 
-          <div class="photo">
+        <article class="catalog-item">
+          <div class="catalog-item__photo">
             <img src="img/photo-2-mobile.png" alt="Цветок">
           </div>
-          <div class="photo-description">
-            <span class="photo__title"></span>Месная растительность<span class="photo__author">Автор фото: Сергей</span>
+          <div class="catalog-item__description">
+            <span class="catalog-item__title"></span>Месная растительность<span class="catalog-item__author">Автор фото: Сергей</span>
           </div>
-          <div class="photo__likes">
-            <svg class="photo__likes-icon">
+          <div class="likes">
+            <svg class="likes__icon">
             </svg>
-            <span class="photo__likes-number">143
+            <span class="likes__number">143
             </span>
          </div>
+         </article>
 
-          <div class="photo">
+         <article class="catalog-item">
+          <div class="catalog-item__photo">
             <img src="img/photo-3-mobile.png" alt="Трасса в лесу">
           </div>
-          <div class="photo-description">
-            <span class="photo__title">Дорога на север</span><span class="photo__author">Автор фото: Петр</span>
+          <div class="catalog-item__description">
+            <span class="catalog-item__title">Дорога на север</span><span class="catalog-item__author">Автор фото: Петр</span>
           </div>
-          <div class="photo__likes">
-            <svg class="photo__likes-icon">
+          <div class="likes">
+            <svg class="likes__icon">
             </svg>
-            <span class="photo__likes-number">96
+            <span class="likes__number">96
             </span>
           </div>
+          </article>
 
-          <div class="photo">
+          <article class="catalog-item">
+            <div class="catalog-item__photo">
             <img src="img/photo-4-desktop1.png" alt="Виды с карьера">
           </div>
-          <div class="photo-description">
-            <span class="photo__title">Мост дьявола</span><span class="photo__author">Автор фото: Антон</span>
+          <div class="catalog-item__description">
+            <span class="catalog-item__title">Мост дьявола</span><span class="catalog-item__author">Автор фото: Антон</span>
           </div>
-          <div class="photo__likes">
-            <svg class="photo__likes-icon">
+          <div class="likes">
+            <svg class="likes__icon">
             </svg>
-            <span class="photo__likes-number">254
+            <span class="likes__number">254
             </span>
           </div>
+          </article>
         </div>
       </section>
 
@@ -115,7 +123,7 @@
            <div class="main-footer__copyright copyright">
             <b class="copyright__text">Разработано</b>
             <a href="https://htmlacademy.ru/" class="copyright__link">
-            <svg class="copyright--icon"></svg></a>
+            <svg class="copyright__icon"></svg></a>
            </div>
          </div>
        </footer>
