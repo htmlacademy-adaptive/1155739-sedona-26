@@ -1,1 +1,6 @@
-// Начните писать стили здесь
+@use "./body.scss";
+@use "./blocks/main-nav.scss";
+@use "./blocks/welcome.scss";
+@use "./blocks/advantages.scss";
+@use "./blocks/location.scss";
+@use "./blocks/main-footer.scss";

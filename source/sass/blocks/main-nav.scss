@@ -1,0 +1,30 @@
+.main-nav__list {
+  display: absolute;
+  padding-left: 0;
+  list-style: none;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+}
+
+.main-nav__wrapper {
+  background-color: #81b3d2;
+}
+
+.main-nav__item {
+  text-align: center;
+  padding: 17px 12px;
+  margin: 0;
+
+  a {
+    color: #ffffff;
+  }
+
+  &:hover {
+    background-color: #669ec0;
+  }
+
+  &:disabled {
+    background-color: #e5e5e5;
+  }
+}

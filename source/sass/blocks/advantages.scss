@@ -1,0 +1,26 @@
+.advantages__list {
+  background-color: #eeeeee;
+  padding-left: 0;
+  list-style: none;
+  margin: 0;
+}
+
+.advantages__item {
+  &--accent {
+    background-color: #81b3d2;
+    color: #ffffff;
+  }
+}
+
+.advantages__title,
+.extra-advantages__title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.extra-advantages {
+  padding-left: 0;
+  list-style: none;
+  background-color: #ffffff;
+}
