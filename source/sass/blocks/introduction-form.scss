@@ -18,3 +18,30 @@
     padding-left: 16px;
   }
 }
+
+.introduction-form {
+  display: grid;
+  row-gap: 16px;
+  margin: 24px 20px 39px;
+}
+
+.introduction-form__row {
+  display: grid;
+  justify-items: start;
+
+  label {
+    margin-left: 16px;
+    text-align: end;
+  }
+
+  input {
+    margin: 0 auto;
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  .introduction-form {
+    grid-area: 1;
+  }
+}

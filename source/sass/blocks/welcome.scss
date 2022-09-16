@@ -1,9 +1,24 @@
-.welcome {
+.welcome__container {
+  display: grid;
+  row-gap: 35px;
+  margin: 30px 32px;
   background-color: #ffffff;
+
 }
 
 .welcome__title {
+  margin: 0;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
+}
+
+.welcome__description {
+  margin: 0;
+}
+
+@media (min-width: 768px) {
+  .welcome__title {
+    font-size: 21px;
+  }
 }

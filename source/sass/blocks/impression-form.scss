@@ -10,3 +10,21 @@
   font-size: 18px;
   line-height: 26px;
 }
+
+
+
+.impression-form {
+  display: grid;
+  row-gap: 16px;
+  margin: 24px 20px 39px;
+}
+
+.impression-form__row {
+  display: flex;
+}
+
+@media (min-width: 768px) {
+  .impression-form {
+    grid-area: 4;
+  }
+}

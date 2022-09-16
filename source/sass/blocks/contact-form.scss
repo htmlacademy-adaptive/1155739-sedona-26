@@ -1,3 +1,10 @@
+.contact-form {
+  display: grid;
+  row-gap: 16px;
+  margin: 24px 20px 39px;
+}
+
+
 .contact-form__title {
   font-weight: 700;
   font-size: 18px;
@@ -16,5 +23,26 @@
   &::placeholder {
     color: rgba(#000000, 0.3);
     padding-left: 16px;
+  }
+}
+
+.contact-form__row {
+  display: grid;
+  justify-items: start;
+
+  label {
+    margin-left: 16px;
+    text-align: end;
+  }
+
+  input {
+    margin: 0 auto;
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  .contact-form {
+    grid-area: 2;
   }
 }

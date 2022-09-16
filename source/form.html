@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="./css/style.css" rel="stylesheet">
   <title>HTML Academy: Седона - оставьте свой отзыв!</title>
 </head>
@@ -38,42 +39,42 @@
 
     <form action="https://echo.htmlacademy.ru" method="get">
 
-
-      <div class="introduction-form">
-        <div class="introduction-form__legend">
-          <span class="introduction-form__title">Представьтесь:</span>
-        </div>
-        <div class="introduction-form__row">
-          <label for="name">Имя*:</label>
-          <input class="name" type="text" placeholder="Петр" id="name" required>
-        </div>
-        <div class="introduction-form__row">
-          <label for="surname">Фамилия*:</label>
-          <input class="surname" type="text" placeholder="Пустота" id="surname" required>
-        </div>
-        <div class="introduction-form__row">
-          <label for="middle-name">Отчество:</label>
-          <input class="middle-name" type="text" placeholder="Викторович" id="middle-name" required>
-        </div>
-      </div>
-
-      <div class="contact-form">
-        <div class="contact-form__legend ">
-          <span class="contact-form__title">Контактная информация:</span>
-        </div>
-        <div class="contact-form__row">
-          <label for="phone">Контактный телефон*:</label>
-          <div class="contact-form__phone">
-            <input class="phone-input" type="text" placeholder="Введите телефон" id="phone" required>
-            <div class="contact-form__icon contact-form__icon--phone"></div>
-            <div class="contact-form__row">
-              <label for="email">Электронная почта*:</label>
-              <div class="contact-form__email">
-                <input class="email-input" type="text" placeholder="Введите e-mail" id="email" required>
-                <div class="contact-form__icon contact-form__icon--email"></div>
-              </div>
-            </div>
+      <div class="main-form__wrapper">
+        <div class="introduction-form">
+          <div class="introduction-form__legend">
+            <span class="introduction-form__title">Представьтесь:</span>
           </div>
+          <div class="introduction-form__row">
+            <label for="name">Имя*:</label>
+            <input class="name" type="text" placeholder="Петр" id="name" required>
+          </div>
+          <div class="introduction-form__row">
+            <label for="surname">Фамилия*:</label>
+            <input class="surname" type="text" placeholder="Пустота" id="surname" required>
+          </div>
+          <div class="introduction-form__row">
+            <label for="middle-name">Отчество:</label>
+            <input class="middle-name" type="text" placeholder="Викторович" id="middle-name" required>
+          </div>
+        </div>
+
+
+        <div class="contact-form">
+          <div class="contact-form__legend ">
+            <span class="contact-form__title">Контактная информация:</span>
+          </div>
+
+          <div class="contact-form__row contact-form__phone">
+            <label for="phone">Контактный телефон*:</label>
+            <input class="phone-input" type="text" placeholder="Введите телефон" id="phone" required>
+          </div>
+
+          <div class="contact-form__row contact-form__email">
+            <label for="email">Электронная почта*:</label>
+            <input class="email-input" type="text" placeholder="Введите e-mail" id="email" required>
+          </div>
+        </div>
+
 
           <div class="impression-form">
             <div class="impression-form__legend ">
@@ -114,7 +115,7 @@
               <label for="attraction-form__item--4">Красные скалы</label>
             </div>
           </div>
-        </div>
+
 
         <div class="review-form comment">
           <div class="comment__legend">
@@ -128,7 +129,7 @@
 
       <div class="main-form__submit">
         <input class="button button--submit" type="submit" value="Отправить отзыв">
-        <div class="required">* — обязательные поля</div>
+        <div class="required"><p>* — обязательные поля</p></div>
       </div>
 
   </section>

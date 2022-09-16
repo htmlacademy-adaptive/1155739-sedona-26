@@ -1,5 +1,47 @@
 .location__title {
   font-weight: 700;
-  font-size: 18px;
+  font-size: 21px;
   line-height: 26px;
+  margin: 38px 29px 16px 30px;
+}
+
+.location__description {
+  margin: 0 29px 32px 30px;
+}
+
+.location__button {
+  font: inherit;
+  width: 284px;
+  height: 58px;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  text-align: center;
+  color: #ffffff;
+  vertical-align: middle;
+  text-transform: uppercase;
+  background-color: #81b3d2;
+  border: none;
+  margin: 0 auto 49px;
+}
+
+.location__map {
+  width: 100%;
+
+}
+
+@media (min-width: 768px) {
+  .location__wrapper {
+    display: grid;
+    align-items: center;
+  }
+
+  .location__title {
+    font-size: 30px;
+  }
+
+  .location__description {
+    max-width: 435px;
+    margin: 0 auto 32px;
+  }
 }

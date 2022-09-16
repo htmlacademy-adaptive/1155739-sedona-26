@@ -1,4 +1,4 @@
-@use "./body.scss";
+@use "./helper.scss";
 @use "./blocks/main-nav.scss";
 @use "./blocks/welcome.scss";
 @use "./blocks/advantages.scss";
@@ -8,6 +8,15 @@
 @use "./blocks/impression-form.scss";
 @use "./blocks/contact-form.scss";
 @use "./blocks/attraction-form.scss";
-@use "./blocks/review-form.scss";
-@use "./blocks/popup.scss";
+@use "./blocks/result.scss";
 @use "./blocks/catalog.scss";
+@use "./blocks/likes.scss";
+@use "./blocks/social-media.scss";
+@use "./blocks/extra-advantages.scss";
+@use "./blocks/comment.scss";
+@use "./blocks/page.scss";
+@use "./blocks/intro.scss";
+@use "./blocks/main-form.scss";
+@use "./blocks/review-form.scss";
+@use "./blocks/catalog-header.scss";
+@use "./blocks/catalog-promo.scss";
