@@ -4,7 +4,6 @@
   line-height: 26px;
   max-width: 306px;
   margin: 0 auto;
-  max-width: 306px;
   text-align: center;
 }
 
@@ -23,7 +22,8 @@
 }
 
 .catalog .photo-container {
-  display: grid;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .catalog-item {
@@ -32,6 +32,23 @@
 
   img {
     width: 100%;
+  }
+
+  &--1 {
+    grid-area: 1;
+    min-width: 648px;
+  }
+
+  &--2 {
+    grid-area: 2;
+  }
+
+  &--3 {
+    grid-area: 3;
+  }
+
+  &--4 {
+    grid-area: 3;
   }
 }
 
@@ -64,31 +81,11 @@
       "1 1"
       "2 3"
       "4 5";
-
   }
 }
 
-.catalog-item {
-  &--1 {
-    grid-area: 1;
-  }
-
-  &--2 {
-    grid-area: 2;
-  }
-
-  &--3 {
-    grid-area: 3;
-  }
-
-  &--4 {
-    grid-area: 3;
-  }
-
-  .catalog-item__wrapper {
-    display: flex;
-    justify-content: space-between;
-    background-color: #EAEAEA;
-    ;
-  }
+.catalog-item__wrapper {
+  display: flex;
+  justify-content: space-between;
+  background-color: #eaeaea;
 }

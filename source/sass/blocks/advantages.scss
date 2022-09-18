@@ -40,14 +40,14 @@
   text-align: center;
 }
 
-.advantages__photo img {
+.advantages__photo {
   position: relative;
-  min-width: 320px;
+  min-height: 260px;
   width: 100%;
   display: block;
-  height: auto;
   padding: 0;
   text-align: center;
+  background-color: #77b37b;
 }
 
 .advantages__number {
@@ -75,7 +75,6 @@
       align-items: start;
       grid-template-columns: 2fr 1fr;
       height: 256px;
-
     }
   }
 
@@ -92,23 +91,15 @@
     &--accent {
       background-color: #81b3d2;
       color: #ffffff;
-
     }
   }
 
   .advantages__photo {
     position: relative;
-    min-width: 320px;
     width: 100%;
     object-fit: inherit;
-    height: 100%;
+    min-height: 256px;
     padding: 0;
-
-    img {
-
-      height: 100%;
-      width: 100%;
-    }
   }
 
   .advantages__wrapper--2 .advantages__container {
@@ -116,11 +107,10 @@
   }
 
   .advantages-list__container {
-    height: 100%;
     position: relative;
     padding: 0;
     display: flex;
-    height: 256px;
+    min-height: 256px;
     justify-content: space-around;
   }
 

@@ -27,7 +27,6 @@
   </header>
 
   <div class="intro">
-    <img class="intro__background" src="img/back-mobile.png" alt="Аризона">
   </div>
 
   <section class="main-form">
@@ -58,64 +57,59 @@
           </div>
         </div>
 
-
         <div class="contact-form">
           <div class="contact-form__legend ">
             <span class="contact-form__title">Контактная информация:</span>
           </div>
-
           <div class="contact-form__row contact-form__phone">
             <label for="phone">Контактный телефон*:</label>
             <input class="phone-input" type="text" placeholder="Введите телефон" id="phone" required>
           </div>
-
           <div class="contact-form__row contact-form__email">
             <label for="email">Электронная почта*:</label>
             <input class="email-input" type="text" placeholder="Введите e-mail" id="email" required>
           </div>
         </div>
 
-
-          <div class="impression-form">
-            <div class="impression-form__legend ">
-              <span class="impression-form__title">Ваше общее впечатление:</span>
-            </div>
-            <div class="impression-form__row">
-              <input class="positive" type="radio" name="impression" id="positive" checked>
-              <label for="positive">Скорее положительное</label>
-            </div>
-            <div class="impression-form__row">
-              <input class="negative" type="radio" name="impression" id="negative">
-              <label for="negative">Скорее отрицательное</label>
-            </div>
-            <div class="impression-form__row">
-              <input class="neutral" type="radio" name="impression" id="neutral">
-              <label for="neutral">Затрудняюсь ответить</label>
-            </div>
+        <div class="impression-form">
+          <div class="impression-form__legend ">
+            <span class="impression-form__title">Ваше общее впечатление:</span>
           </div>
-
-          <div class="attraction-form">
-            <div class="attraction-form__legend">
-              <span class="attraction-form__title">Посещенные достопримечательности:</span>
-            </div>
-            <div class="attraction-form__row">
-              <input class="attraction-form__item" type="checkbox" name="attraction" id="attraction-1" checked>
-              <label for="attraction-form__item--1">Мост Дьявола</label>
-            </div>
-            <div class="attraction-form__row">
-              <input class="attraction-form__item" type="checkbox" name="attraction" id="attraction-2" checked>
-              <label for="attraction-form__item--2">Слайд-парк</label>
-            </div>
-            <div class="attraction-form__row">
-              <input class="attraction-form__item" type="checkbox" name="attraction" id="attraction-3">
-              <label for="attraction-form__item--3">Гора-Колокол</label>
-            </div>
-            <div class="attraction-form__row">
-              <input class="attraction-form__item" type="checkbox" name="attraction" id="attraction-4" checked>
-              <label for="attraction-form__item--4">Красные скалы</label>
-            </div>
+          <div class="impression-form__row">
+            <input class="positive" type="radio" name="impression" id="positive" checked>
+            <label for="positive">Скорее положительное</label>
           </div>
+          <div class="impression-form__row">
+            <input class="negative" type="radio" name="impression" id="negative">
+            <label for="negative">Скорее отрицательное</label>
+          </div>
+          <div class="impression-form__row">
+            <input class="neutral" type="radio" name="impression" id="neutral">
+            <label for="neutral">Затрудняюсь ответить</label>
+          </div>
+        </div>
 
+        <div class="attraction-form">
+          <div class="attraction-form__legend">
+            <span class="attraction-form__title">Посещенные достопримечательности:</span>
+          </div>
+          <div class="attraction-form__row">
+            <input class="attraction-form__item" type="checkbox" name="attraction" id="attraction-1" checked>
+            <label for="attraction-1">Мост Дьявола</label>
+          </div>
+          <div class="attraction-form__row">
+            <input class="attraction-form__item" type="checkbox" name="attraction" id="attraction-2" checked>
+            <label for="attraction-2">Слайд-парк</label>
+          </div>
+          <div class="attraction-form__row">
+            <input class="attraction-form__item" type="checkbox" name="attraction" id="attraction-3">
+            <label for="attraction-3">Гора-Колокол</label>
+          </div>
+          <div class="attraction-form__row">
+            <input class="attraction-form__item" type="checkbox" name="attraction" id="attraction-4" checked>
+            <label for="attraction-4">Красные скалы</label>
+          </div>
+        </div>
 
         <div class="review-form comment">
           <div class="comment__legend">
@@ -129,10 +123,13 @@
 
       <div class="main-form__submit">
         <input class="button button--submit" type="submit" value="Отправить отзыв">
-        <div class="required"><p>* — обязательные поля</p></div>
+        <div class="required">
+          <p>* — обязательные поля</p>
+        </div>
       </div>
-
+    </form>
   </section>
+
   <footer class="main-footer">
     <div class="main-footer__wrapper">
       <h2 class="main-footer__slogan">#VISITSEDONA</h2>
@@ -178,8 +175,5 @@
       <a class="button" href="#">Ок</a>
     </div>
   </div>
-
-
 </body>
-
 </html>
