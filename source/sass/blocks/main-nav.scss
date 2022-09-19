@@ -1,6 +1,9 @@
 .main-nav {
-  position: relative;
+  position: absolute;
+  width: 100%;
   display: flex;
+  z-index: 2;
+  top: 0;
 }
 
 .main-nav__list {
@@ -18,15 +21,14 @@
   padding: 0;
   width: 100%;
   display: grid;
-  background-color: #81b3d2;
 }
 
 .main-nav__item {
   background-color: #81b3d2;
   text-align: center;
-  padding: 0;
-  margin: 17px auto 0;
-  height: 55px;
+  padding-top: 17px;
+  padding-bottom: 12px;
+  min-height: 55px;
 
   a {
     color: #ffffff;
@@ -38,16 +40,6 @@
 
   &:disabled {
     background-color: #e5e5e5;
-  }
-}
-
-@media (min-width: 768px) {
-  .main-nav__toggle {
-    display: none;
-  }
-
-  .main-nav__logo {
-    order: 2;
   }
 }
 

@@ -49,15 +49,10 @@
 
 @media (min-width: 768px) {
   .main-form__wrapper {
-    grid-template: 1fr 1fr
-      1fr 1fr
-      1fr 1fr
-      1fr 1fr;
-
     grid-template-areas:
-      "1 2"
-      "3 3"
-      "4 4"
-      "5 5";
+      "introduction contacts"
+      "impression impression"
+      "attraction attraction"
+      "comment comment";
   }
 }
