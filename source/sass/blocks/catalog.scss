@@ -28,6 +28,10 @@
 .catalog-item {
   display: grid;
   margin: 24px 20px 25px;
+
+  img {
+    display: block;
+  }
 }
 
 .catalog-item__description {

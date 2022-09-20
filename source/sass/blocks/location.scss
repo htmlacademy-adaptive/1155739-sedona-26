@@ -25,7 +25,9 @@
   margin: 0 auto 49px;
 }
 
-.location__map {
+.location iframe {
+  border: none;
+  display: block;
   width: 100%;
 }
 
