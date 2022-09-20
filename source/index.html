@@ -3,34 +3,35 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="./css/style.css" rel="stylesheet">
   <title>HTML Academy: Седона</title>
 </head>
 
 <body class="page__body">
   <header class="main-header">
-    <a href="/" class="main-header__icon">
+    <a href="/" class="main-header__logo">
       <img src="img/logo.svg" width="185" height="96" alt="City of Cedona">
     </a>
     <nav class="main-nav">
       <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list main-nav__list--opened">
-          <li class="main-nav__item main-nav__item--active"><a href="index.html">Главная</a></li>
-          <li class="main-nav__item"><a href="catalog.html">Фото и видео</a></li>
-          <li class="main-nav__item"><a href="form.html">Формат отзыва</a></li>
-          <li class="main-nav__item"><a href="#">HTML academy</a></li>
+          <li class="main-nav__item main-nav__item--active main-nav__item"><a href="index.html">Главная</a></li>
+          <li class="main-nav__item main-nav__item"><a href="catalog.html">Фото и видео</a></li>
+          <li class="main-nav__item main-nav__item"><a href="form.html">Формат отзыва</a></li>
+          <li class="main-nav__item main-nav__item"><a href="#">HTML academy</a></li>
         </ul>
       </div>
     </nav>
   </header>
 
   <div class="intro">
-    <img class="intro__background" src="img/back-mobile.png" alt="Аризона">
+    <img class="intro__text" src="./img/text-index.svg" width="282" height="214">
   </div>
   <section class="welcome">
-    <div class="welcome-header">
-      <h1 class="welcome__title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
+    <div class="welcome__container">
+      <h1 class="welcome__title">Седона — небольшой городок в Аризоне,<br>заслуживающий большего!</h1>
       <p class="welcome__description">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
     </div>
   </section>
@@ -40,59 +41,77 @@
     <section class="advantages">
       <h2 class="visually-hidden">Преимущества</h2>
       <ul class="advantages__list">
-        <li class="advantages__item">
-          <div class="advantages__container advantages__container--accent">
-            <h3 class="advantages__title">НАСТОЯЩИЙ ГОРОДОК</h3>
+        <li class="advantages__section">
+          <div class="advantages__wrapper advantages__wrapper--1">
+          <div class="advantages__item advantages__container advantages__container--1 advantages__container--accent">
+            <h3 class="advantages__title ad">НАСТОЯЩИЙ ГОРОДОК</h3>
             <p class="advantages__number">— №1 —</p>
             <p class="advantages__description">Седона не атракцион для туристов, там прячется своя жизнь</p>
-            <img src="img/photo-city@1x1.png" alt="Местный ресторан" class="advantages__photo">
           </div>
+          <div class="advantages__photo">
+          </div>
+        </div>
 
-          <ul class="extra-advantages">
-            <li class="extra-advantages__item extra-advantages__item--accomodation">
-              <h2 class="extra-advantages__title">Жилье</h2>
-              <p class="extra-advantages__description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
-            </li>
+          <ul class="extra-advantages__list">
+            <div class="extra-advantages extra-advantages__container">
+              <li class="advantages__item extra-advantages__item extra-advantages__item--accomodation">
+                <h2 class="extra-advantages__title">Жилье</h2>
+                <p class="extra-advantages__description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+              </li>
 
-            <li class="extra-advantages__item extra-advantages__item--food">
-              <h2 class="extra-advantages__title">Еда</h2>
-              <p class="extra-advantages__description">Всегда заказывайте фирменный бургер, Вы не разочаруетесь!</p>
-            </li>
+              <li class="advantages__item extra-advantages__item extra-advantages__item--food">
+                <h2 class="extra-advantages__title">Еда</h2>
+                <p class="extra-advantages__description">Всегда заказывайте фирменный бургер, Вы не разочаруетесь!</p>
+              </li>
 
-            <li class="extra-advantages__item extra-advantages__item--souvenirs">
-              <h2 class="extra-advantages__title">Сувениры</h2>
-              <p class="extra-advantages__description">Не только китайского, но и местного производства!</p>
-            </li>
+              <li class="advantages__item extra-advantages__item extra-advantages__item--souvenirs">
+                <h2 class="extra-advantages__title">Сувениры</h2>
+                <p class="extra-advantages__description">Не только китайского, но и местного производства!</p>
+              </li>
+            </div>
           </ul>
+
         </li>
 
+
         <li class="advantages__item">
+          <div class="advantages__wrapper advantages__wrapper--2">
           <div class="advantages__container advantages__container--accent">
             <h3 class="advantages__title">Там есть Мост дьявола</h3>
             <p class="advantages__number">— №2 —</p>
             <p class="advantages__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
-            <img src="img/photo-bridge@1x1.png" alt="Карьер" class="advantages__photo">
           </div>
+          <div class="advantages__photo">
+          </div>
+        </div>
         </li>
+<div class="advantages-list__container">
+        <div class="advantages__container">
+          <li class="advantages__item">
+            <h3 class="advantages__title">Небольшая площадь</h3>
+            <p class="advantages__number">— №3 —</p>
+            <p class="advantages__description">Все интересные места находятся очень близко</p>
+        </div>
 
-        <li class="advantages__item">
-          <h3 class="advantages__title">Небольшая площадь</h3>
-          <p class="advantages__number">— №3 —</p>
-          <p class="advantages__description">Все интересные места находятся очень близко</p>
+        <div class="advantages__container">
+          </li>
+          <li class="advantages__item">
+            <h3 class="advantages__title">Красивая дорога</h3>
+            <p class="advantages__number">— №4 —</p>
+            <p class="advantages__description">Ехать в Сеgдону из Лас-Вегаса совсем не скучно!</p>
 
-        </li>
-        <li class="advantages__item">
-          <h3 class="advantages__title">Красивая дорога</h3>
-          <p class="advantages__number">— №4 —</p>
-          <p class="advantages__description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+          </li>
+        </div>
 
-        </li>
-        <li class="advantages__item">
-          <h3 class="advantages__title">Мало туристов</h3>
-          <p class="advantages__number">— №5 —</p>
-          <p class="advantages__description">Большинство едет в гранд каньон и толпится там</p>
+        <div class="advantages__container">
+          <li class="advantages__item">
+            <h3 class="advantages__title">Мало туристов</h3>
+            <p class="advantages__number">— №5 —</p>
+            <p class="advantages__description">Большинство едет в гранд каньон и толпится там</p>
 
-        </li>
+          </li>
+        </div>
+      </div>
       </ul>
     </section>
 
@@ -101,15 +120,19 @@
         <h2 class="location__title">Заинтересовались?</h2>
         <p class="location__description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения
           гостиниц в Cедоне</p>
-        <button class="button location__button" type="button"><span>Найти гостинницу</span></button>
-        <img src="img/map-mobile.png" alt="Карта города">
+          <button class="button location__button" type="button"><span>Найти гостинницу</span></button>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d108105.83161662407!2d-112.50506338481702!3d34.53528043919237!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872b08ebcb4c186b%3A0x423927b17fc1cd71!2sArizona%2C%20USA!5e0!3m2!1sen!2sca!4v1663660750784!5m2!1sen!2sca" width="600" height="450" style="border:0;" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+           height="350"
+           allowfullscreen
+           title="Офис компании по адресу набережная реки Карповки, 5, литера П, Санкт-Петербург"
+         ></iframe>
       </div>
     </section>
   </main>
 
   <footer class="main-footer">
     <div class="main-footer__wrapper">
-      <h2 class="main-footer__slogan">#VISITSEDONA</h2>
+      <div class="main-footer__slogan"><h2>#VISITSEDONA</h2></div>
 
       <div class="main-footer__social-media social-media">
         <b class="social-media__title visually-hidden">Давайте дружить!</b>

@@ -1,0 +1,16 @@
+.review-form {
+  display: grid;
+  row-gap: 20px;
+  margin: 24px 20px 39px;
+}
+
+.review-form textarea {
+  margin: 0 auto;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .review-form {
+    grid-area: 5;
+  }
+}

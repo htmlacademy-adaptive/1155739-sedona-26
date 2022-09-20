@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="./css/style.css" rel="stylesheet">
   <title>HTML Academy: Седона - оставьте свой отзыв!</title>
 </head>
@@ -13,9 +14,9 @@
       <img src="img/logo.svg" width="185" height="96" alt="City of Cedona">
     </a>
     <nav class="main-nav">
-      <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
       <div class="main-nav__wrapper">
-        <ul class="main-nav__list main-nav__list--opened">
+        <ul class="main-nav__list main-nav__list--opened main-nav__list--nojs">
+          <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
           <li class="main-nav__item"><a href="index.html">Главная</a></li>
           <li class="main-nav__item"><a href="catalog.html">Фото и видео</a></li>
           <li class="main-nav__item main-nav__item--active"><a href="form.html">Формат отзыва</a></li>
@@ -26,7 +27,6 @@
   </header>
 
   <div class="intro">
-    <img class="intro__background" src="img/back-mobile.png" alt="Аризона">
   </div>
 
   <section class="main-form">
@@ -38,100 +38,98 @@
 
     <form action="https://echo.htmlacademy.ru" method="get">
 
+      <div class="main-form__wrapper">
+        <div class="introduction-form">
+          <div class="introduction-form__legend">
+            <span class="introduction-form__title">Представьтесь:</span>
+          </div>
+          <div class="introduction-form__row">
+            <label for="name">Имя*:</label>
+            <input class="name" type="text" placeholder="Петр" id="name" required>
+          </div>
+          <div class="introduction-form__row">
+            <label for="surname">Фамилия*:</label>
+            <input class="surname" type="text" placeholder="Пустота" id="surname" required>
+          </div>
+          <div class="introduction-form__row">
+            <label for="middle-name">Отчество:</label>
+            <input class="middle-name" type="text" placeholder="Викторович" id="middle-name" required>
+          </div>
+        </div>
 
-      <div class="introduction-form">
-        <div class="introduction-form__legend">
-          <span class="introduction-form__title">Представьтесь:</span>
-        </div>
-        <div class="introduction-form__row">
-          <label for="name">Имя*:</label>
-          <input class="name" type="text" placeholder="Петр" id="name" required>
-        </div>
-        <div class="introduction-form__row">
-          <label for="surname">Фамилия*:</label>
-          <input class="surname" type="text" placeholder="Пустота" id="surname" required>
-        </div>
-        <div class="introduction-form__row">
-          <label for="middle-name">Отчество:</label>
-          <input class="middle-name" type="text" placeholder="Викторович" id="middle-name" required>
-        </div>
-      </div>
-
-      <div class="contact-form">
-        <div class="contact-form__legend ">
-          <span class="contact-form__title">Контактная информация:</span>
-        </div>
-        <div class="contact-form__row">
-          <label for="phone">Контактный телефон*:</label>
-          <div class="contact-form__phone">
+        <div class="contact-form">
+          <div class="contact-form__legend ">
+            <span class="contact-form__title">Контактная информация:</span>
+          </div>
+          <div class="contact-form__row contact-form__phone">
+            <label for="phone">Контактный телефон*:</label>
             <input class="phone-input" type="text" placeholder="Введите телефон" id="phone" required>
-            <div class="contact-form__icon contact-form__icon--phone"></div>
-            <div class="contact-form__row">
-              <label for="email">Электронная почта*:</label>
-              <div class="contact-form__email">
-                <input class="email-input" type="text" placeholder="Введите e-mail" id="email" required>
-                <div class="contact-form__icon contact-form__icon--email"></div>
-              </div>
-            </div>
           </div>
-
-          <div class="impression-form">
-            <div class="impression-form__legend ">
-              <span class="impression-form__title">Ваше общее впечатление:</span>
-            </div>
-            <div class="impression-form__row">
-              <input class="positive" type="radio" name="impression" id="positive" checked>
-              <label for="positive">Скорее положительное</label>
-            </div>
-            <div class="impression-form__row">
-              <input class="negative" type="radio" name="impression" id="negative">
-              <label for="negative">Скорее отрицательное</label>
-            </div>
-            <div class="impression-form__row">
-              <input class="neutral" type="radio" name="impression" id="neutral">
-              <label for="neutral">Затрудняюсь ответить</label>
-            </div>
-          </div>
-
-          <div class="attraction-form">
-            <div class="attraction-form__legend">
-              <span class="attraction-form__title">Посещенные достопримечательности:</span>
-            </div>
-            <div class="attraction-form__row">
-              <input class="attraction-form__item" type="checkbox" name="attraction" id="attraction-1" checked>
-              <label for="attraction-form__item--1">Мост Дьявола</label>
-            </div>
-            <div class="attraction-form__row">
-              <input class="attraction-form__item" type="checkbox" name="attraction" id="attraction-2" checked>
-              <label for="attraction-form__item--2">Слайд-парк</label>
-            </div>
-            <div class="attraction-form__row">
-              <input class="attraction-form__item" type="checkbox" name="attraction" id="attraction-3">
-              <label for="attraction-form__item--3">Гора-Колокол</label>
-            </div>
-            <div class="attraction-form__row">
-              <input class="attraction-form__item" type="checkbox" name="attraction" id="attraction-4" checked>
-              <label for="attraction-form__item--4">Красные скалы</label>
-            </div>
+          <div class="contact-form__row contact-form__email">
+            <label for="email">Электронная почта*:</label>
+            <input class="email-input" type="text" placeholder="Введите e-mail" id="email" required>
           </div>
         </div>
 
-        <div class="review-form comment">
-          <div class="comment__legend">
-            <span class="comment__title">Опишите свои эмоции:</span>
+        <div class="impression-form">
+          <div class="impression-form__legend ">
+            <span class="impression-form__title">Ваше общее впечатление:</span>
           </div>
-          <div class="comment__input">
-            <textarea name="comment__input-area" placeholder="Опишите подробно все свои восторги"></textarea>
+          <div class="impression-form__row">
+            <input class="positive" type="radio" name="impression" id="positive" checked>
+            <label for="positive">Скорее положительное</label>
+          </div>
+          <div class="impression-form__row">
+            <input class="negative" type="radio" name="impression" id="negative">
+            <label for="negative">Скорее отрицательное</label>
+          </div>
+          <div class="impression-form__row">
+            <input class="neutral" type="radio" name="impression" id="neutral">
+            <label for="neutral">Затрудняюсь ответить</label>
+          </div>
+        </div>
+
+        <div class="attraction-form">
+          <div class="attraction-form__legend">
+            <span class="attraction-form__title">Посещенные достопримечательности:</span>
+          </div>
+          <div class="attraction-form__row">
+            <input class="attraction-form__item" type="checkbox" name="attraction" id="attraction-1" checked>
+            <label for="attraction-1">Мост Дьявола</label>
+          </div>
+          <div class="attraction-form__row">
+            <input class="attraction-form__item" type="checkbox" name="attraction" id="attraction-2" checked>
+            <label for="attraction-2">Слайд-парк</label>
+          </div>
+          <div class="attraction-form__row">
+            <input class="attraction-form__item" type="checkbox" name="attraction" id="attraction-3">
+            <label for="attraction-3">Гора-Колокол</label>
+          </div>
+          <div class="attraction-form__row">
+            <input class="attraction-form__item" type="checkbox" name="attraction" id="attraction-4" checked>
+            <label for="attraction-4">Красные скалы</label>
+          </div>
+        </div>
+
+        <div class="comment-form">
+          <div class="comment-form__legend">
+            <span class="comment-form__title">Опишите свои эмоции:</span>
+          </div>
+          <div class="comment-form__input">
+            <textarea name="comment-form__input-area" placeholder="Опишите подробно все свои восторги"></textarea>
           </div>
         </div>
       </div>
 
       <div class="main-form__submit">
         <input class="button button--submit" type="submit" value="Отправить отзыв">
-        <div class="required">* — обязательные поля</div>
+        <div class="required">
+          <p>* — обязательные поля</p>
+        </div>
       </div>
-
+    </form>
   </section>
+
   <footer class="main-footer">
     <div class="main-footer__wrapper">
       <h2 class="main-footer__slogan">#VISITSEDONA</h2>
@@ -177,8 +175,5 @@
       <a class="button" href="#">Ок</a>
     </div>
   </div>
-
-
 </body>
-
 </html>

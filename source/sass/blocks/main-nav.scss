@@ -1,20 +1,72 @@
+.main-nav {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  z-index: 2;
+  top: 0;
+}
+
 .main-nav__list {
-  display: absolute;
-  padding-left: 0;
+  padding: 0;
+  margin: 0;
   list-style: none;
+}
+
+.main-nav--closed .main-nav__wrapper {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.main-nav--closed .main-nav__toggle::before {
+  content: "";
+  position: absolute;
+  top: 15px;
+  left: 17px;
+  width: 36px;
+  height: 2px;
+  background-color: #ffffff;
+  box-shadow: 0 8px 0 0 #ffffff, 0 16px 0 0 #ffffff;
+}
+
+.main-nav--closed .main-nav__toggle:active::before {
+  background-color: fade(#ffffff, 30%);
+  box-shadow:
+    0 8px 0 0 fade(#ffffff, 30%),
+    0 16px 0 0 fade(#ffffff, 30%);
+}
+
+.main-nav--closed .main-list__item {
+  display: none;
+}
+
+
+.main-nav--opened .main-nav__list {
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
 }
 
-.main-nav__wrapper {
-  background-color: #81b3d2;
+.main-nav--opened .main-nav__wrapper {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  display: grid;
 }
 
-.main-nav__item {
+.main-nav--opened .main-nav__item {
+  background-color: #81b3d2;
   text-align: center;
-  padding: 17px 12px;
-  margin: 0;
+  padding-top: 17px;
+  padding-bottom: 12px;
+  min-height: 55px;
 
   a {
     color: #ffffff;
@@ -26,5 +78,58 @@
 
   &:disabled {
     background-color: #e5e5e5;
+  }
+}
+
+@media (min-width: 768px) {
+  .main-nav__list {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+.main-nav__wrapper {
+  width: 100%;
+}
+
+  .main-nav__toggle {
+    display: none;
+  }
+
+
+  .main-nav__item {
+    background-color: #ffffff;
+    text-align: center;
+    margin: 17px 5px 18px 5px;
+    height: 55px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 21px;
+
+    a {
+      color: #000000;
+    }
+
+    &--active a {
+      color: #766357;
+    }
+
+    li {
+      margin: 0;
+    }
+
+
+  &:hover {
+    background-color: #ffffff;
+  }
+
+  &:disabled {
+    background-color: #ffffff;
+  }
+  }
+
+  .main-nav__logo {
+    order: 2;
+    position: absolute;
   }
 }
